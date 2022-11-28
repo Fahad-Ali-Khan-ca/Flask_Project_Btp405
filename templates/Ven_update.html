@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>BOOKIT/Join</title>
+<link rel="icon" type="image/x-icon" href="static/images/icons8-globe-africa-94.png">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">JOIN</h1>
+
+    <div class="form">
+        <form action="/Post_ven" method="POST">
+          <h3>Venue Name : <input type="text" name="Ven_Name" id="Ven_Name"> </h3>
+          <h3>Artist Name : <input type="text" name="Artist_Name" id="Artist_Name"> </h3>
+          <h3>Write a short description about the event :  <input type="text" name="Ven_descrip" id="Ven_descrip">  </h3>
+          <h3>Venue date : <input type="date" name="Ven_Date" id="Ven_Date"> </h3>
+          <h3>Seats Available : <input type="Integer" name="Seats_Avail" id="Seats_Avail"> </h3>
+            <input type="submit" value="SUBMIT">
+            
+        </form>
+    </div>
+</div>
+{% endblock %}
